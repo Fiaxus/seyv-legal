@@ -40,7 +40,8 @@
 <p><strong>Hesap bilgileri</strong></p>
 <ul>
   <li>E-posta adresin ve hesap oluştururken girdiğin adın.</li>
-  <li>Şifren. Şifren Google Firebase Authentication tarafından güvenli biçimde saklanır; biz şifreni göremeyiz.</li>
+  <li>E-postayla kayıt olduysan şifren. Şifren Google Firebase Authentication tarafından güvenli biçimde saklanır; biz şifreni göremeyiz.</li>
+  <li><strong>Google ile giriş yaparsan:</strong> Google hesabındaki adın ve e-posta adresin, senin onayınla Google'dan alınır. Google hesabının şifresine erişmeyiz; Google hesabındaki diğer bilgilere (kişiler, e-postalar, fotoğraflar vb.) de erişmeyiz.</li>
   <li>E-posta adresinin doğrulanıp doğrulanmadığı bilgisi.</li>
 </ul>
 <p><strong>Uygulamaya girdiğin finansal kayıtlar</strong></p>
@@ -52,6 +53,7 @@
 <p><strong>Teknik veriler (çökme ve hata raporları)</strong></p>
 <ul>
   <li>Uygulama çöktüğünde veya beklenmeyen bir hata oluştuğunda Google Firebase Crashlytics aracılığıyla bir hata raporu gönderilir. Bu rapor cihaz modeli, işletim sistemi sürümü, uygulama sürümü, hatanın teknik ayrıntıları ve hesabına ait rastgele bir kullanıcı kimliği (uid) içerir.</li>
+  <li>Google ile giriş başarısız olursa, sorunu bulabilmemiz için yalnızca hatanın kodu ve teknik açıklaması aynı şekilde raporlanır.</li>
   <li>Hata raporlarına e-posta adresin, adın veya harcama bilgilerin eklenmez.</li>
 </ul>
 <p><strong>Yalnızca cihazında kalan veriler</strong></p>
@@ -75,7 +77,7 @@
 <h2>5. Bilgilerin kimlerle paylaşılıyor?</h2>
 <p>Bilgilerini yalnızca Seyv'in çalışması için gereken hizmet sağlayıcılarla, yalnızca bu amaçla paylaşırız:</p>
 <ul>
-  <li><strong>Google Firebase</strong> (Google LLC / Google Ireland Ltd.): Hesap yönetimi (Firebase Authentication), harcama ve bütçe kayıtlarının saklanması (Cloud Firestore) ve çökme raporları (Firebase Crashlytics). Cloud Firestore verileri Avrupa'daki sunucularda saklanır. Kimlik doğrulama ve çökme raporları Google'ın küresel altyapısında, Avrupa Birliği dışındaki ülkelerde de işlenebilir.</li>
+  <li><strong>Google Firebase</strong> (Google LLC / Google Ireland Ltd.): Hesap yönetimi ve Google ile giriş (Firebase Authentication), harcama ve bütçe kayıtlarının saklanması (Cloud Firestore) ve çökme raporları (Firebase Crashlytics). Cloud Firestore verileri Avrupa'daki sunucularda saklanır. Kimlik doğrulama ve çökme raporları Google'ın küresel altyapısında, Avrupa Birliği dışındaki ülkelerde de işlenebilir.</li>
   <li><strong>Frankfurter</strong> (döviz kuru hizmeti, api.frankfurter.dev): Güncel döviz kurlarını almak için telefonun bu hizmete istek gönderir. Bu sırada IP adresin ve hangi kurların istendiği bilgisi hizmete ulaşır. Bu isteğe hesap bilgilerin veya harcamaların eklenmez.</li>
   <li><strong>Yasal zorunluluklar:</strong> Yasal bir yükümlülük veya yetkili bir makamın talebi olması halinde, yalnızca gerekli olan bilgiyi paylaşabiliriz.</li>
 </ul>
@@ -95,7 +97,7 @@
 <h2>8. Hakların</h2>
 <p>KVKK'nın 11. maddesi kapsamında; kişisel verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını öğrenme, aktarıldığı tarafları öğrenme, eksik veya yanlış işlenmişse düzeltilmesini ve silinmesini isteme, işlemeye itiraz etme ve zarara uğraman halinde zararın giderilmesini talep etme haklarına sahipsin.</p>
 <ul>
-  <li>Adını ve e-posta adresini uygulamada <strong>Profil → Profili düzenle</strong> bölümünden değiştirebilirsin.</li>
+  <li>Adını ve e-posta adresini uygulamada <strong>Profil → Profili düzenle</strong> bölümünden değiştirebilirsin. Google ile giriş yaptıysan e-posta adresin Google hesabına bağlıdır ve uygulamadan değiştirilemez.</li>
   <li>Hesabını ve bütün verilerini uygulamada <strong>Profil → Hesabı Sil</strong> bölümünden silebilirsin. Ayrıntılar için <a href="delete-account.html">Hesap ve Veri Silme</a> sayfasına bakabilirsin.</li>
   <li>Diğer talepler için <a href="mailto:fiaxusstudio@gmail.com">fiaxusstudio@gmail.com</a> adresine yazabilirsin. Taleplerini en geç 30 gün içinde yanıtlarız.</li>
 </ul>

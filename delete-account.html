@@ -38,23 +38,28 @@
   <li>Seyv'i aç ve hesabına giriş yap.</li>
   <li>Alt menüden <strong>Profil</strong> sekmesine git.</li>
   <li>Sayfanın en altındaki <strong>Hesabı Sil</strong> düğmesine dokun.</li>
-  <li>Silme işlemini onayla ve güvenlik için şifreni tekrar gir.</li>
+  <li>Silme işlemini onayla ve güvenlik için kimliğini doğrula:
+    <ul>
+      <li>E-postayla kayıt olduysan şifreni tekrar gir.</li>
+      <li>Google ile giriş yaptıysan açılan pencerede Seyv'e bağlı Google hesabını seç.</li>
+    </ul>
+  </li>
 </ol>
 <p>İşlem tamamlandığında hesabın ve bütün verilerin hemen silinir ve oturumun kapanır.</p>
 
 <h2>2. E-posta ile</h2>
 <p>Uygulamaya erişimin yoksa (örneğin uygulamayı telefonundan sildiysen veya şifreni hatırlamıyorsan) silme talebini e-postayla iletebilirsin:</p>
 <ol>
-  <li><a href="mailto:fiaxusstudio@gmail.com?subject=Seyv%20hesap%20silme%20talebi">fiaxusstudio@gmail.com</a> adresine, <strong>Seyv hesabını açtığın e-posta adresinden</strong> bir e-posta gönder.</li>
+  <li><a href="mailto:fiaxusstudio@gmail.com?subject=Seyv%20hesap%20silme%20talebi">fiaxusstudio@gmail.com</a> adresine, <strong>Seyv hesabını açtığın e-posta adresinden</strong> (Google ile giriş yaptıysan o Google hesabının e-posta adresinden) bir e-posta gönder.</li>
   <li>Konu satırına "Seyv hesap silme talebi" yaz.</li>
   <li>Hesabının senin olduğunu doğrulamak için gerekirse seninle iletişime geçeriz.</li>
 </ol>
 <p>Talebin en geç 30 gün içinde işleme alınır ve tamamlandığında sana e-postayla bilgi verilir.</p>
-<p class="note">Şifreni unuttuysan, uygulamanın giriş ekranındaki "Şifremi unuttum" seçeneğiyle şifreni sıfırlayıp hesabını uygulama içinden de silebilirsin.</p>
+<p class="note">E-postayla kayıt olduysan ve şifreni unuttuysan, uygulamanın giriş ekranındaki "Şifremi unuttum" seçeneğiyle şifreni sıfırlayıp hesabını uygulama içinden de silebilirsin.</p>
 
 <h2>Hangi veriler silinir?</h2>
 <ul>
-  <li>Hesabın ve giriş bilgilerin (e-posta adresin ve şifren).</li>
+  <li>Hesabın ve giriş bilgilerin (e-posta adresin, varsa şifren ve Google hesabınla olan bağlantı).</li>
   <li>Adın.</li>
   <li>Bütün harcama kayıtların (tutar, para birimi, kur, kategori, açıklama, tarih).</li>
   <li>Aylık bütçen ve kategori bütçe limitlerin.</li>
@@ -62,6 +67,7 @@
 
 <h2>Silinmeyen veya bir süre saklanan veriler</h2>
 <ul>
+  <li><strong>Google hesabın:</strong> Seyv hesabını silmek Google hesabını silmez. Yalnızca Google hesabınla Seyv arasındaki bağlantı kaldırılır.</li>
   <li><strong>Çökme ve hata raporları:</strong> Firebase Crashlytics'e gönderilmiş hata raporları yalnızca rastgele bir kullanıcı kimliği içerir; e-posta adresin, adın veya harcamaların bu raporlarda yer almaz. Bu raporlar Google tarafından sınırlı bir süre (genellikle 90 gün) saklandıktan sonra otomatik olarak silinir.</li>
   <li><strong>Cihazındaki veriler:</strong> Bildirim ayarların, bildirim geçmişin ve tema tercihin yalnızca telefonunda tutulur. Hesap silindiğinde bildirim verilerin cihazından da silinir; diğerleri uygulamayı telefonundan kaldırdığında silinir.</li>
   <li><strong>Yasal zorunluluklar:</strong> Yasal bir yükümlülük gerektirmedikçe silinen verileri saklamayız.</li>
