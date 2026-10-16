@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seyv Hesap ve Veri Silme</title>
+<style>
+  :root { --bg:#F7FAF8; --card:#FFFFFF; --fg:#10312D; --muted:#5E7A74; --primary:#08A88A; --line:#E2E8E6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12181E; --card:#1B232B; --fg:#EEF6F4; --muted:#A3B8B2; --primary:#4FE3C1; --line:rgba(255,255,255,.09); }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px 24px; }
+  h1 { font-size:1.75rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  ul, ol { padding-left:1.4rem; }
+  li { margin:6px 0; }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 20px; }
+  a { color:var(--primary); }
+  .back { display:inline-block; margin-bottom:16px; text-decoration:none; font-size:.95rem; }
+  .note { border-left:3px solid var(--primary); padding:4px 0 4px 14px; color:var(--muted); }
+  footer { color:var(--muted); font-size:.85rem; text-align:center; margin-top:24px; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./">← Seyv yasal metinler</a>
+<div class="card">
+<h1>Hesap ve Veri Silme</h1>
+<p class="meta">Seyv · Fiaxus Studio · Son güncelleme: 16 Ekim 2026</p>
+
+<p>Seyv hesabını ve hesabına bağlı bütün verileri istediğin zaman silebilirsin. Bunun iki yolu var.</p>
+
+<h2>1. Uygulamanın içinden (önerilen)</h2>
+<ol>
+  <li>Seyv'i aç ve hesabına giriş yap.</li>
+  <li>Alt menüden <strong>Profil</strong> sekmesine git.</li>
+  <li>Sayfanın en altındaki <strong>Hesabı Sil</strong> düğmesine dokun.</li>
+  <li>Silme işlemini onayla ve güvenlik için şifreni tekrar gir.</li>
+</ol>
+<p>İşlem tamamlandığında hesabın ve bütün verilerin hemen silinir ve oturumun kapanır.</p>
+
+<h2>2. E-posta ile</h2>
+<p>Uygulamaya erişimin yoksa (örneğin uygulamayı telefonundan sildiysen veya şifreni hatırlamıyorsan) silme talebini e-postayla iletebilirsin:</p>
+<ol>
+  <li><a href="mailto:fiaxusstudio@gmail.com?subject=Seyv%20hesap%20silme%20talebi">fiaxusstudio@gmail.com</a> adresine, <strong>Seyv hesabını açtığın e-posta adresinden</strong> bir e-posta gönder.</li>
+  <li>Konu satırına "Seyv hesap silme talebi" yaz.</li>
+  <li>Hesabının senin olduğunu doğrulamak için gerekirse seninle iletişime geçeriz.</li>
+</ol>
+<p>Talebin en geç 30 gün içinde işleme alınır ve tamamlandığında sana e-postayla bilgi verilir.</p>
+<p class="note">Şifreni unuttuysan, uygulamanın giriş ekranındaki "Şifremi unuttum" seçeneğiyle şifreni sıfırlayıp hesabını uygulama içinden de silebilirsin.</p>
+
+<h2>Hangi veriler silinir?</h2>
+<ul>
+  <li>Hesabın ve giriş bilgilerin (e-posta adresin ve şifren).</li>
+  <li>Adın.</li>
+  <li>Bütün harcama kayıtların (tutar, para birimi, kur, kategori, açıklama, tarih).</li>
+  <li>Aylık bütçen ve kategori bütçe limitlerin.</li>
+</ul>
+
+<h2>Silinmeyen veya bir süre saklanan veriler</h2>
+<ul>
+  <li><strong>Çökme ve hata raporları:</strong> Firebase Crashlytics'e gönderilmiş hata raporları yalnızca rastgele bir kullanıcı kimliği içerir; e-posta adresin, adın veya harcamaların bu raporlarda yer almaz. Bu raporlar Google tarafından sınırlı bir süre (genellikle 90 gün) saklandıktan sonra otomatik olarak silinir.</li>
+  <li><strong>Cihazındaki veriler:</strong> Bildirim ayarların, bildirim geçmişin ve tema tercihin yalnızca telefonunda tutulur. Hesap silindiğinde bildirim verilerin cihazından da silinir; diğerleri uygulamayı telefonundan kaldırdığında silinir.</li>
+  <li><strong>Yasal zorunluluklar:</strong> Yasal bir yükümlülük gerektirmedikçe silinen verileri saklamayız.</li>
+</ul>
+
+<p>Daha fazla bilgi için <a href="privacy.html">Gizlilik Politikası</a>'nı okuyabilir veya <a href="mailto:fiaxusstudio@gmail.com">fiaxusstudio@gmail.com</a> adresine yazabilirsin.</p>
+</div>
+<footer>© 2026 Fiaxus Studio</footer>
+</main>
+</body>
+</html>
